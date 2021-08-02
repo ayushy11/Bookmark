@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./*"],
+      "components/*": ["./components/*"],
+      "lib/*": ["./lib/*"],
+      "api/*": ["./api/*"],
+      "redux/*": ["./redux/*"]
+    }
+  },
+  "exclude": ["node_modules", "out", ".next"]
+}
