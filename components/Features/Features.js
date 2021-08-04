@@ -2,12 +2,10 @@ import React from 'react';
 import { Flex } from '@chakra-ui/react';
 
 function Features() {
-    return (
-        <div>
+    return (       
             <Flex w="100%" bg="lightgray" p="6">
                 feature section.
-            </Flex>
-        </div>
+            </Flex>      
     )
 }
 
