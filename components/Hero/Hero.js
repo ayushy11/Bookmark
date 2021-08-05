@@ -121,11 +121,22 @@ function Hero() {
             Open a new browser tab and see your sites load instantly. Try it for
             free.
           </Text>
-          <Flex mt="1.875rem" ml="0.5rem">
-            <Button variant="secondary" display="block" boxShadow="lg">
+          <Flex mt="1.875rem" ml="0.5rem" fontWeight="400">
+            <Button
+              variant="secondary"
+              display="block"
+              boxShadow="lg"
+              fontWeight="400"
+            >
               get it on chrome
             </Button>
-            <Button variant="secondary" display="block" ml="1.3rem" boxShadow="lg">
+            <Button
+              variant="secondary"
+              display="block"
+              ml="1.3rem"
+              boxShadow="lg"
+              fontWeight="400"
+            >
               get it on firefox
             </Button>
           </Flex>

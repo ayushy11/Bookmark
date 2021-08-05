@@ -26,15 +26,15 @@ function Features() {
         <Flex
           border="2px solid red"
           flexDirection="column"
-          alignItems={{ xs: "center", sm: "flex-start" }}
+          alignItems={{ xs: "center", sm: "center" }}
           // justifyContent="center"
           p="2rem"
-          w={{ xs: "100%", sm: "70%" }}
-          mt={{ sm: "5rem" }}
-          pl={{ xs: "1.8rem", sm: "10rem" }}
+          w={{ xs: "100%", sm: "45%" }}
+        //   mt={{ sm: "5rem" }}
+        //   pl={{ xs: "1.8rem", sm: "10rem" }}
         >
           <Heading
-            textAlign={{ xs: "center", sm: "left" }}
+            textAlign={{ xs: "center", sm: "center" }}
             fontWeight="500"
             fontSize={{ xs: "2rem", sm: "2rem" }}
             p={{ xs: "0rem", sm: "0.5rem" }}
@@ -45,16 +45,17 @@ function Features() {
             Features
           </Heading>
           <Text
-            textAlign={{ xs: "center", sm: "left" }}
+            textAlign={{ xs: "center", sm: "center" }}
             p={{ xs: "0.8rem", sm: "0.5rem" }}
             color="grayBlue"
-            fontSize={{ xs: "0.875rem", sm: "1rem" }}
+            fontSize={{ xs: "0.875rem", sm: "1.2rem" }}
           >
             Our aim is to make it quick and easy for you to access your
             favourite websites. Your bookmarks sync between your devices so you
             can access them on the go.
           </Text>
         </Flex>
+        
       </Flex>
     </Section>
   );

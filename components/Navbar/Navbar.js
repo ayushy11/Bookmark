@@ -25,7 +25,9 @@ function Navbar() {
         <a>
           <Text pr="3rem">CONTACT</Text>
         </a>
-        <Button w="16%" letterSpacing="1.5px" boxShadow="lg">LOGIN</Button>
+        <Button w="16%" letterSpacing="1.5px" boxShadow="lg" fontWeight="400">
+          LOGIN
+        </Button>
       </Flex>
     </Flex>
   );
