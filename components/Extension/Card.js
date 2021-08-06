@@ -29,7 +29,7 @@ function Card({ logo, title, version, position }) {
         {version}
       </Text>
       <Image src="images/bg-dots.svg" p="1" />
-      <Button variant="secondary" fontWeight="400" p="5" m="5">
+      <Button variant="secondary" p="5" m="5">
         Add & Install Extension
       </Button>
     </Flex>

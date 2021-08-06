@@ -126,7 +126,6 @@ function Hero() {
               variant="secondary"
               display="block"
               boxShadow="lg"
-              fontWeight="400"
             >
               get it on chrome
             </Button>
@@ -135,7 +134,6 @@ function Hero() {
               display="block"
               ml="1.3rem"
               boxShadow="lg"
-              fontWeight="400"
             >
               get it on firefox
             </Button>

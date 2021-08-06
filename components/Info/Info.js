@@ -54,7 +54,7 @@ function Info() {
             like answered please feel free to email us.
           </Text>
 
-          <Button variant="secondary" fontWeight="400">          
+          <Button variant="secondary">          
             More Info
           </Button>
         </Flex>
