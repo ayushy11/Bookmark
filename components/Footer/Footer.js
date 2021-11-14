@@ -7,6 +7,7 @@ import {
   Button,
   Image,
   Link,
+  color,
 } from "@chakra-ui/react";
 
 function Footer() {
@@ -33,8 +34,8 @@ function Footer() {
         </a>
       </Flex>
       <Flex>
-        <Image src="images/icon-facebook.svg" boxSize="10" p="2" mr="2rem" />
-        <Image src="images/icon-twitter.svg" boxSize="10" p="2" mr="6rem" />
+        <Image src="images/icon-facebook.svg" boxSize="10" p="2" mr="2rem"  />
+        <Image src="images/icon-twitter.svg" boxSize="10" p="2" mr="6rem"  />
       </Flex>
     </Flex>
   );

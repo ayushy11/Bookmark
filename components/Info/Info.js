@@ -53,9 +53,11 @@ function Info() {
             Here are some of our FAQs. If you have any other questions you'd
             like answered please feel free to email us.
           </Text>
+          <Flex w="100%" border="2px solid orange" h="auto">
 
+          </Flex>
           <Button variant="secondary">          
-            More Info
+            More FAQs
           </Button>
         </Flex>
       </Flex>

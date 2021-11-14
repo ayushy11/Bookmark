@@ -31,6 +31,7 @@ a:link,
 a:active {
   cursor: pointer;
   text-decoration: none;
+  color: hsl(0, 94%, 66%);
 }
 
 .visible {
