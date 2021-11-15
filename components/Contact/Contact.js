@@ -13,7 +13,7 @@ import { Container, Section } from "../library";
 
 function Contact() {
   return (
-    <Section bg="primary" zIndex="1" px="0rem">
+    <Section bg="primary" zIndex="1" px="0rem" w="150%">
       <Flex
         // w="60%"
         p="10"
@@ -36,8 +36,20 @@ function Contact() {
           Stay up-to-date with what we're doing
         </Heading>
         <Flex p="5" w="75%">
-          <Input variant="filled" placeholder="Enter your email address" m="4"/>
-          <Button m="4" w="50%">Contact Us</Button>
+          <Input
+            variant="filled"
+            placeholder="Enter your email address"
+            m="4"
+            sx={{
+              "&:focus": {
+                bg: "white",
+                color:"black"
+              },
+            }}
+          />
+          <Button m="4" w="50%">
+            Contact Us
+          </Button>
         </Flex>
       </Flex>
     </Section>

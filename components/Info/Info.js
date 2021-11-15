@@ -7,6 +7,11 @@ import {
   Button,
   Image,
   Link,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
 } from "@chakra-ui/react";
 import { Container, Section } from "../library";
 
@@ -15,6 +20,7 @@ function Info() {
     <Section bg="#f9f9f9" zIndex="1" px="0rem">
       <Flex
         border="2px solid purple"
+        w={{xs:"150%",sm:"100%"}}
         flexDirection={{ xs: "column", sm: "column" }}
         maxWidth="1440px"
         position="relative"
@@ -54,11 +60,75 @@ function Info() {
             like answered please feel free to email us.
           </Text>
           <Flex w="100%" border="2px solid orange" h="auto">
+            <Accordion allowMultiple allowToggle w="100%">
+              <AccordionItem >
+                <h2>
+                  <AccordionButton _expanded={{color: "primaryRed" }}>
+                    <Box flex="1" textAlign="left">
+                     What is Bookmark?
+                    </Box>
+                    <AccordionIcon _expanded={{color: "primaryRed" }}/>
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </AccordionPanel>
+              </AccordionItem>
 
+              <AccordionItem>
+                <h2>
+                  <AccordionButton _expanded={{color: "primaryRed" }}>
+                    <Box flex="1" textAlign="left">
+                    How can I request a new browser?
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </AccordionPanel>
+              </AccordionItem>
+              <AccordionItem>
+                <h2>
+                  <AccordionButton _expanded={{color: "primaryRed" }}>
+                    <Box flex="1" textAlign="left">
+                    Is there a mobile app?
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </AccordionPanel>
+              </AccordionItem>
+              <AccordionItem>
+                <h2>
+                  <AccordionButton _expanded={{color: "primaryRed" }}>
+                    <Box flex="1" textAlign="left">
+                    What about other Chromium browsers?
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </AccordionPanel>
+              </AccordionItem>
+            </Accordion>
           </Flex>
-          <Button variant="secondary">          
-            More FAQs
-          </Button>
+          <Button variant="secondary">More FAQs</Button>
         </Flex>
       </Flex>
     </Section>

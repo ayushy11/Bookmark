@@ -14,6 +14,7 @@ function Hero() {
   return (
     <Section bg="#f9f9f9" zIndex="1" px="0rem">
       <Flex
+        w={{xs:"150%",sm:"100%"}}
         border="2px solid purple"
         flexDirection={{ xs: "column", sm: "row-reverse" }}
         maxWidth="1440px"

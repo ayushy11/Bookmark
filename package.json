@@ -9,6 +9,7 @@
     "commit": "cz"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.6.4",
     "@emotion/babel-plugin": "^11.2.0",
     "@emotion/react": "^11.1.5",

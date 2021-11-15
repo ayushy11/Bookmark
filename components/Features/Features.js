@@ -37,6 +37,7 @@ function Features() {
   return (
     <Section bg="#f9f9f9" zIndex="1" px="0rem">
       <Flex
+       w={{xs:"150%",sm:"100%"}}
         border="2px solid purple"
         flexDirection={{ xs: "column", sm: "column" }}
         maxWidth="1440px"
@@ -79,14 +80,15 @@ function Features() {
           </Text>
         </Flex>
         <Flex
-          border="2px solid black"
-          w="44%"
+          flexDirection={{xs:"column",sm:"row"}}
+          w={{xs:"44%",sm:"50%"}}
           mt="1rem"
           alignItems="center"
           color="grayBlue"
           fontSize="1rem"
           letterSpacing="1px"
           mb="1.5rem"
+          ml="5%"
         >
           <a onClick={() => setmenuState(0)}>
             <Text pr="3rem" pl="2.875rem">Simple Bookmarking</Text>
@@ -95,7 +97,7 @@ function Features() {
             <Text pr="3rem">Speedy Searching</Text>
           </a>
           <a onClick={() => setmenuState(2)}>
-            <Text>Easy Sharing</Text>
+            <Text pr="3rem">Easy Sharing</Text>
           </a>
         </Flex>
         <Flex 
@@ -118,7 +120,7 @@ function Features() {
                 border="2px solid green"
                 position="relative"
                 justifyContent="center"
-                w="80%"
+                w={{xs:"100%",sm:"80%"}}
                 h={{ xs: "50vh", sm: "70vh" }}
                 zIndex="100"
                 overflow="hidden"
@@ -194,15 +196,15 @@ function Features() {
                       height="23rem"
                       zIndex="0"
                       bg="primary"
-                      w="90%"
+                      w="80%"
                     />
                     <Image
                       border="2px solid black"
                       src="/images/illustration-features-tab-2.svg"
                       position="absolute"
-                      top="2.3rem"
-                      right="0rem"
-                      w="80%"
+                      top="0.3rem"
+                      right="4rem"
+                      w="70%"
                       mt="4rem"
                       zIndex="10"
                     />
@@ -217,15 +219,15 @@ function Features() {
                       height="23rem"
                       zIndex="0"
                       bg="primary"
-                      w="90%"
+                      w="80%"
                     />
                     <Image
                       border="2px solid black"
                       src="/images/illustration-features-tab-3.svg"
                       position="absolute"
-                      top="2.3rem"
-                      right="0rem"
-                      w="80%"
+                      top="0.3rem"
+                      right="4rem"
+                      w="70%"
                       mt="4rem"
                       zIndex="10"
                     />
