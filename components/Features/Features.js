@@ -79,6 +79,8 @@ function Features() {
           </Text>
         </Flex>
         <Flex
+          border="2px solid black"
+          w="44%"
           mt="1rem"
           alignItems="center"
           color="grayBlue"
@@ -87,15 +89,20 @@ function Features() {
           mb="1.5rem"
         >
           <a onClick={() => setmenuState(0)}>
-            <Text pr="3rem">Simple Bookmarking</Text>
+            <Text pr="3rem" pl="2.875rem">Simple Bookmarking</Text>
           </a>
           <a onClick={() => setmenuState(1)}>
             <Text pr="3rem">Speedy Searching</Text>
           </a>
           <a onClick={() => setmenuState(2)}>
-            <Text pr="3rem">Easy Sharing</Text>
+            <Text>Easy Sharing</Text>
           </a>
         </Flex>
+        <Flex 
+          w="45%"
+          h="0.125rem"
+          backgroundColor="grayBlue"
+        />
         <Flex w="100%" h="auto" border="2px solid orange">
           <Section w="100%" bg="#f9f9f9" zIndex="1" px="0rem">
             <Flex
