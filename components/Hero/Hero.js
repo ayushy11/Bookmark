@@ -27,7 +27,7 @@ function Hero() {
           border="2px solid green"
           position="relative"
           justifyContent="center"
-          w="80%"
+          w={{xs:"100%",sm:"80%"}}
           h={{ xs: "50vh", sm: "70vh" }}
           zIndex="100"
           overflow="hidden"

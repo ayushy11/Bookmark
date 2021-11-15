@@ -13,12 +13,12 @@ import { Container, Section } from "../library";
 
 function Contact() {
   return (
-    <Section bg="primary" zIndex="1" px="0rem" w="150%">
+    <Section bg="primary" zIndex="1" px="0rem" w={{xs:"150%",sm:"100%"}}>
       <Flex
         // w="60%"
         p="10"
-        w="56%"
-        ml="20rem"
+        w={{sm:"56%"}}
+        ml={{sm:"20rem"}}
         alignItems="center"
         justifyContent="center"
         color="white"
@@ -26,13 +26,13 @@ function Contact() {
       >
         <Text
           textTransform="uppercase"
-          p="5"
+          p={{sm:"5"}}
           letterSpacing="2.5px"
           fontSize="0.875rem"
         >
           35,000+ already joined
         </Text>
-        <Heading p="5" w="68%" textAlign="center" fontWeight="500">
+        <Heading p={{sm:"5"}} w={{sm:"68%"}} textAlign="center" fontWeight="500">
           Stay up-to-date with what we're doing
         </Heading>
         <Flex p="5" w="75%">

@@ -12,30 +12,43 @@ import {
 
 function Footer() {
   return (
-    <Flex w="100%" p="1.6rem" bg="darkBlue" justifyContent="space-between">
+    <Flex
+      w={{ xs: "150%", sm: "100%" }}
+      p="1.6rem"
+      bg="darkBlue"
+      justifyContent="space-between"
+      alignItems="center"
+      flexDir={{xs:"column",sm:"row"}}
+    >
       <Flex
-        w="50%"
+        w={{xs:"60%",sm:"50%"}}
         justifyContent="center"
         alignItems="center"
         color="grayBlue"
         fontWeight="500"
         fontSize="0.875rem"
         letterSpacing="1px"
+        flexDir={{xs:"column",sm:"row"}}
       >
-        <Image src="/images/logo-bookmark-white.svg" pl="8rem" pr="3rem" h="1.875rem" />
+        <Image
+          src="/images/logo-bookmark-white.svg"
+          pl={{sm:"8rem"}}
+          pr={{sm:"3rem"}}
+          h="1.875rem"
+        />
         <a>
-          <Text pr="3rem">FEATURES</Text>
+          <Text pr={{sm:"3rem"}}>FEATURES</Text>
         </a>
         <a>
-          <Text pr="3rem">PRICING</Text>
+          <Text pr={{sm:"3rem"}}>PRICING</Text>
         </a>
         <a>
-          <Text pr="3rem">CONTACT</Text>
+          <Text pr={{sm:"3rem"}}>CONTACT</Text>
         </a>
       </Flex>
-      <Flex>
-        <Image src="images/icon-facebook.svg" boxSize="10" p="2" mr="2rem"  />
-        <Image src="images/icon-twitter.svg" boxSize="10" p="2" mr="6rem"  />
+      <Flex flexDir={{xs:"column",sm:"row"}}>
+        <Image src="images/icon-facebook.svg" boxSize="10" p="2" mr={{sm:"2rem"}} />
+        <Image src="images/icon-twitter.svg" boxSize="10" p="2" mr={{sm:"6rem"}} />
       </Flex>
     </Flex>
   );

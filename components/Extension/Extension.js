@@ -13,10 +13,10 @@ import Card from "./Card";
 
 function Extension() {
   return (
-    <Section bg="#f9f9f9" zIndex="1" px="0rem" >
+    <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{xs:"150%",sm:"100%"}}>
       <Flex
         border="2px solid purple"
-        w={{ xs: "150%", sm: "100%" }}
+        w={{ xs: "100%", sm: "100%" }}
         flexDirection={{ xs: "column", sm: "column" }}
         maxWidth="1440px"
         position="relative"
@@ -60,6 +60,7 @@ function Extension() {
           border="2px solid green"
           flexDirection={{ xs: "column", sm: "row" }}
           w={{ xs: "100%", sm: "100%" }}
+          alignItems="center"
         >
           <Card
             logo="/images/logo-chrome.svg"
