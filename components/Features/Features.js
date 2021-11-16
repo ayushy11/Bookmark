@@ -35,9 +35,8 @@ function Features() {
   const [menuState, setmenuState] = useState(0);
 
   return (
-    <Section bg="#f9f9f9" zIndex="1" px="0rem">
-      <Flex
-       w={{xs:"150%",sm:"100%"}}
+    <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{xs:"150%",sm:"100%"}} >
+      <Flex        
         border="2px solid purple"
         flexDirection={{ xs: "column", sm: "column" }}
         maxWidth="1440px"
