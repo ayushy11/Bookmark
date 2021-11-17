@@ -1,31 +1,78 @@
 import React, { useState } from "react";
 import { Flex, Input, Button } from "@chakra-ui/react";
+import {
+  AlertDialog,
+  AlertDialogBody,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogContent,
+  AlertDialogOverlay,
+  AlertDialogCloseButton,
+  useDisclosure,
+} from "@chakra-ui/react";
 
 function AddBookmark({ addBookmark }) {
-  const [data, setData] = useState({ data: "" });
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const cancelRef = React.useRef();
 
-  const handleInputChange = (e) => {
-    setData({ data: e.target.value });
+  const [newData, setNewData] = useState({ names: "", urls: "" });
+
+  const handleNameChange = (e) => {
+    setNewData({ names: e.target.value });
+  };
+  const handleUrlChange = (e) => {
+    setNewData({ ...newData, urls: e.target.value });
   };
 
   const submitBookmark = (e) => {
     e.preventDefault();
-    addBookmark(data.data);
-    setData({ data: "" });
+    console.log("------>", newData);
+    addBookmark(newData);
+    setNewData({ names: "", urls: "" });
   };
 
   return (
-    <Flex>
-      <Input
-        placeholder="Name"
-        value={data.data}
-        type="text"
-        onSubmit={submitBookmark}
-        onChange={handleInputChange}
-      ></Input>
-      <Input placeholder="URL"></Input>
-      <Button onClick={submitBookmark}>ADD</Button>
-    </Flex>
+    <>
+      <Button onClick={onOpen} w="25%">
+        Add Bookmark
+      </Button>
+      <AlertDialog
+        motionPreset="slideInBottom"
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+        isOpen={isOpen}
+        isCentered
+      >
+        <AlertDialogOverlay />
+
+        <AlertDialogContent>
+          <AlertDialogHeader>Add Bookmark</AlertDialogHeader>
+          <AlertDialogCloseButton />
+          <AlertDialogBody>
+            <Input
+              placeholder="Name"
+              value={newData.names}
+              type="text"
+              onChange={handleNameChange}
+            />
+            <Input
+              placeholder="URL"
+              value={newData.urls}
+              type="text"
+              onChange={handleUrlChange}
+            />
+          </AlertDialogBody>
+          <AlertDialogFooter>
+            <Button ref={cancelRef} onClick={onClose}>
+              Cancel
+            </Button>
+            <Button onClick={submitBookmark} colorScheme="red" ml={3}>
+              Save
+            </Button>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+    </>
   );
 }
 

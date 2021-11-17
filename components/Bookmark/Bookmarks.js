@@ -3,7 +3,7 @@ import Bookmark from "./Bookmark.js";
 import { Flex } from "@chakra-ui/react";
 
 export default function Bookmarks(props) {
-  console.log(props);
+//   console.log(props);
   return (
     <Flex w="100%" overflow="scroll">
       {props.bookmarks?.map((bookmark, index) => {

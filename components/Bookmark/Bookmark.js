@@ -3,7 +3,8 @@ import React from "react";
 import { Flex, Text, Button } from "@chakra-ui/react";
 
 function Bookmark(props) {
-  const { id, data } = props.bookmark;
+  console.log("IMP", props);
+  const { id, name, url } = props.bookmark;
 
   const deleteBookmark = (e) => {
     props.delBookmark(id);
@@ -12,8 +13,9 @@ function Bookmark(props) {
   return (
     <Flex w="50%" h="auto">
       <Button onClick={deleteBookmark}>delete</Button>
-      <Flex w="100%">
-        <Text>{data}</Text>
+      <Flex w="100%" border="2px solid blue" flexDir="column">
+        <Text w="50%">{name}</Text>
+        <Text w="50%">{url}</Text>
       </Flex>
     </Flex>
   );

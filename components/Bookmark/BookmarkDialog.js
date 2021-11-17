@@ -10,16 +10,7 @@ import {
   useDisclosure,
   Input,
 } from "@chakra-ui/react";
-import {
-  Box,
-  Flex,
-  Text,
-  Heading,
-  Button,
-  Image,
-  Slide,
-  Lorem,
-} from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 
 function BookmarkDialog() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,7 +18,9 @@ function BookmarkDialog() {
 
   return (
     <>
-      <Button onClick={onOpen} w="25%">Add Bookmark</Button>
+      <Button onClick={onOpen} w="25%">
+        Add Bookmark
+      </Button>
       <AlertDialog
         motionPreset="slideInBottom"
         leastDestructiveRef={cancelRef}

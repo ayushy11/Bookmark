@@ -13,15 +13,18 @@ function BookmarkHome() {
     bookmarks: [
       {
         id: uuidv4(),
-        data: "The Earth is not flat",
+        name: "The Earth is not flat",
+        url: "https://www.google.com",
       },
       {
         id: uuidv4(),
-        data: "It's not round either",
+        name: "It's not round either",
+        url: "https://www.google.com",
       },
       {
         id: uuidv4(),
-        data: "It's more like a donut",
+        name: "It's more like a donut",
+        url: "https://www.google.com",
       },
     ],
   };
@@ -34,10 +37,14 @@ function BookmarkHome() {
       : true
   );
 
-  const addBookmark = (data) => {
+  const addBookmark = (newdata) => {
+    console.log("!!!!!!!!", newdata);
+    const a = newdata.names;
+    const b = newdata.urls;
     const newBookmark = {
       id: uuidv4(),
-      data,
+      name: a,
+      url: b,
     };
     setState({ bookmarks: [...state.bookmarks, newBookmark] });
   };
@@ -77,8 +84,6 @@ function BookmarkHome() {
 
         <Bookmarks bookmarks={state.bookmarks} delBookmark={delBookmark} />
 
-        <AddBookmark addBookmark={addBookmark} />
-
         <Flex
           border="2px solid grey"
           w={{ xs: "150%", sm: "100%" }}
@@ -96,7 +101,8 @@ function BookmarkHome() {
               zIndex="10000"
             />
           </Flex>
-          <BookmarkDialog />
+          <AddBookmark addBookmark={addBookmark} />
+          {/* <BookmarkDialog /> */}
         </Flex>
       </Flex>
     </Section>
