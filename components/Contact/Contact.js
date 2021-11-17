@@ -28,7 +28,7 @@ function Contact() {
           textTransform="uppercase"
           p={{ sm: "5" }}
           letterSpacing="2.5px"
-          fontSize="0.875rem"
+          fontSize={{xs:"1.6rem",sm:"0.875rem"}}
         >
           35,000+ already joined
         </Text>
@@ -37,14 +37,16 @@ function Contact() {
           w={{ sm: "68%" }}
           textAlign="center"
           fontWeight="500"
+          fontSize={{xs:"2rem",sm:"default"}}
         >
           Stay up-to-date with what we're doing
         </Heading>
-        <Flex p="5" w="75%">
+        <Flex p="5" w={{xs:"100%",sm:"75%"}}>
           <Input
             variant="filled"
             placeholder="Enter your email address"
             m="4"
+          fontSize={{xs:"1.3rem",sm:"default"}}
             sx={{
               "&:focus": {
                 bg: "white",
@@ -52,7 +54,7 @@ function Contact() {
               },
             }}
           />
-          <Button m="4" w="50%">
+          <Button m="4" w="50%" fontSize={{xs:"1.3rem",sm:"default"}}>
             Contact Us
           </Button>
         </Flex>

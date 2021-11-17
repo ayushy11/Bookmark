@@ -35,8 +35,8 @@ function Features() {
   const [menuState, setmenuState] = useState(0);
 
   return (
-    <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{xs:"150%",sm:"100%"}} >
-      <Flex        
+    <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{ xs: "150%", sm: "100%" }}>
+      <Flex
         border="2px solid purple"
         flexDirection={{ xs: "column", sm: "column" }}
         maxWidth="1440px"
@@ -59,7 +59,7 @@ function Features() {
           <Heading
             textAlign={{ xs: "center", sm: "center" }}
             fontWeight="500"
-            fontSize={{ xs: "2rem", sm: "2rem" }}
+            fontSize={{ xs: "3rem", sm: "2rem" }}
             p={{ xs: "0rem", sm: "0.5rem" }}
             color="primaryBlue"
             fontFamily=""
@@ -71,7 +71,7 @@ function Features() {
             textAlign={{ xs: "center", sm: "center" }}
             p={{ xs: "0.8rem", sm: "0.5rem" }}
             color="grayBlue"
-            fontSize={{ xs: "0.875rem", sm: "1.2rem" }}
+            fontSize={{ xs: "1.5rem", sm: "1.2rem" }}
           >
             Our aim is to make it quick and easy for you to access your
             favourite websites. Your bookmarks sync between your devices so you
@@ -79,31 +79,29 @@ function Features() {
           </Text>
         </Flex>
         <Flex
-          flexDirection={{xs:"column",sm:"row"}}
-          w={{xs:"44%",sm:"50%"}}
+          flexDirection={{ xs: "column", sm: "row" }}
+          w={{ xs: "60%", sm: "50%" }}
           mt="1rem"
           alignItems="center"
           color="grayBlue"
-          fontSize="1rem"
+          fontSize={{ xs: "1.5rem", sm: "1rem" }}
           letterSpacing="1px"
           mb="1.5rem"
           ml="5%"
         >
           <a onClick={() => setmenuState(0)}>
-            <Text pr="3rem" pl="2.875rem">Simple Bookmarking</Text>
+            <Text pr={{ sm: "3rem" }} pl={{ sm: "2.875rem" }}>
+              Simple Bookmarking
+            </Text>
           </a>
           <a onClick={() => setmenuState(1)}>
-            <Text pr="3rem">Speedy Searching</Text>
+            <Text pr={{ sm: "3rem" }}>Speedy Searching</Text>
           </a>
           <a onClick={() => setmenuState(2)}>
-            <Text pr="3rem">Easy Sharing</Text>
+            <Text pr={{ sm: "3rem" }}>Easy Sharing</Text>
           </a>
         </Flex>
-        <Flex 
-          w="45%"
-          h="0.125rem"
-          backgroundColor="grayBlue"
-        />
+        <Flex w="45%" h="0.125rem" backgroundColor="grayBlue" />
         <Flex w="100%" h="auto" border="2px solid orange">
           <Section w="100%" bg="#f9f9f9" zIndex="1" px="0rem">
             <Flex
@@ -119,8 +117,8 @@ function Features() {
                 border="2px solid green"
                 position="relative"
                 justifyContent="center"
-                w={{xs:"100%",sm:"80%"}}
-                h={{ xs: "50vh", sm: "70vh" }}
+                w={{ xs: "100%", sm: "80%" }}
+                h={{ xs: "60vh", sm: "70vh" }}
                 zIndex="100"
                 overflow="hidden"
                 sx={{
@@ -165,7 +163,7 @@ function Features() {
                       top="12rem"
                       left="0"
                       borderRightRadius="10rem"
-                      height="23rem"
+                      height={{xs:"15rem",sm:"23rem"}}
                       zIndex="0"
                       bg="primary"
                       w="90%"
@@ -192,7 +190,7 @@ function Features() {
                       top="12rem"
                       left="0"
                       borderRightRadius="10rem"
-                      height="23rem"
+                      height={{xs:"15rem",sm:"23rem"}}
                       zIndex="0"
                       bg="primary"
                       w="80%"
@@ -215,7 +213,7 @@ function Features() {
                       top="12rem"
                       left="0"
                       borderRightRadius="10rem"
-                      height="23rem"
+                      height={{xs:"15rem",sm:"23rem"}}
                       zIndex="0"
                       bg="primary"
                       w="80%"
@@ -248,14 +246,14 @@ function Features() {
                 <Heading
                   textAlign={{ xs: "center", sm: "left" }}
                   fontWeight="500"
-                  fontSize={{ xs: "2rem", sm: "1.875rem" }}
+                  fontSize={{ xs: "2.875rem", sm: "1.875rem" }}
                   p={{ xs: "0rem", sm: "0.5rem" }}
                   color="primaryBlue"
                   fontFamily=""
                   lineHeight={{ sm: "1" }}
                 >
                   {menuState == 0
-                    ? "A Simple Bookmark Manager"
+                    ? "Bookmark in one click"
                     : menuState == 1
                     ? "Intelligent Search"
                     : "Share your Bookmarks"}
@@ -264,14 +262,20 @@ function Features() {
                   textAlign={{ xs: "center", sm: "left" }}
                   p={{ xs: "0.8rem", sm: "0.5rem" }}
                   color="grayBlue"
-                  fontSize={{ xs: "0.875rem", sm: "1rem" }}
+                  fontSize={{ xs: "1.5rem", sm: "1rem" }}
                 >
                   Organize your bookmarks however you like. Our simpe
                   drag-n-drop interface gives you complete control over how you
                   manage your favourite websites.
                 </Text>
                 <Flex mt="1.875rem" ml="0.5rem" fontWeight="400">
-                  <Button variant="secondary" display="block" boxShadow="lg">
+                  <Button
+                    variant="secondary"
+                    display="block"
+                    boxShadow="lg"
+                    h={{ xs: "3.6rem" }}
+                    fontSize={{xs:"1.3rem"}}
+                  >
                     More Info
                   </Button>
                 </Flex>

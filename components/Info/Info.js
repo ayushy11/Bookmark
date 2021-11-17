@@ -17,10 +17,10 @@ import { Container, Section } from "../library";
 
 function Info() {
   return (
-    <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{xs:"150%",sm:"100%"}}>
+    <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{ xs: "150%", sm: "100%" }}>
       <Flex
         border="2px solid purple"
-        w={{xs:"100%",sm:"100%"}}
+        w={{ xs: "100%", sm: "100%" }}
         flexDirection={{ xs: "column", sm: "column" }}
         maxWidth="1440px"
         position="relative"
@@ -54,20 +54,29 @@ function Info() {
             textAlign={{ xs: "center", sm: "center" }}
             p={{ xs: "0.8rem", sm: "0.5rem" }}
             color="grayBlue"
-            fontSize={{ xs: "0.875rem", sm: "1.2rem" }}
+            fontSize={{ xs: "1.5rem", sm: "1.2rem" }}
+            mb={{ xs: "1rem" }}
           >
             Here are some of our FAQs. If you have any other questions you'd
             like answered please feel free to email us.
           </Text>
-          <Flex w="100%" border="2px solid orange" h="auto">
+          <Flex
+            w="100%"
+            border="2px solid orange"
+            h="auto"
+            fontSize={{ xs: "1.5rem", sm: "1.2rem" }}
+            mb="1rem"
+          >
             <Accordion allowMultiple allowToggle w="100%">
-              <AccordionItem >
+              <AccordionItem>
                 <h2>
-                  <AccordionButton _expanded={{color: "primaryRed" }}>
+                  <AccordionButton _expanded={{ color: "primaryRed" }}>
                     <Box flex="1" textAlign="left">
-                     What is Bookmark?
+                      <Text fontSize={{ xs: "1.5rem", sm: "1rem" }}>
+                        What is Bookmark?
+                      </Text>
                     </Box>
-                    <AccordionIcon _expanded={{color: "primaryRed" }}/>
+                    <AccordionIcon _expanded={{ color: "primaryRed" }} />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
@@ -80,9 +89,11 @@ function Info() {
 
               <AccordionItem>
                 <h2>
-                  <AccordionButton _expanded={{color: "primaryRed" }}>
+                  <AccordionButton _expanded={{ color: "primaryRed" }}>
                     <Box flex="1" textAlign="left">
-                    How can I request a new browser?
+                      <Text fontSize={{ xs: "1.5rem", sm: "1rem" }}>
+                        How can I request a new browser?
+                      </Text>
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
@@ -96,9 +107,11 @@ function Info() {
               </AccordionItem>
               <AccordionItem>
                 <h2>
-                  <AccordionButton _expanded={{color: "primaryRed" }}>
+                  <AccordionButton _expanded={{ color: "primaryRed" }}>
                     <Box flex="1" textAlign="left">
-                    Is there a mobile app?
+                      <Text fontSize={{ xs: "1.5rem", sm: "1rem" }}>
+                        Is there a mobile app?
+                      </Text>
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
@@ -112,9 +125,11 @@ function Info() {
               </AccordionItem>
               <AccordionItem>
                 <h2>
-                  <AccordionButton _expanded={{color: "primaryRed" }}>
+                  <AccordionButton _expanded={{ color: "primaryRed" }}>
                     <Box flex="1" textAlign="left">
-                    What about other Chromium browsers?
+                      <Text fontSize={{ xs: "1.5rem", sm: "1rem" }}>
+                        What about other Chromium browsers?
+                      </Text>
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
@@ -128,7 +143,13 @@ function Info() {
               </AccordionItem>
             </Accordion>
           </Flex>
-          <Button variant="secondary">More FAQs</Button>
+          <Button
+            variant="secondary"
+            fontSize={{ xs: "1.3rem", sm: "1rem" }}
+            h={{ xs: "3rem",sm:"default" }}
+          >
+            More FAQs
+          </Button>
         </Flex>
       </Flex>
     </Section>

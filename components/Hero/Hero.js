@@ -1,19 +1,12 @@
 import React from "react";
-import {
-  Box,
-  Flex,
-  Text,
-  Heading,
-  Button,
-  Image,
-  Link,
-} from "@chakra-ui/react";
+import { Box, Flex, Text, Heading, Button, Image } from "@chakra-ui/react";
 import { Container, Section } from "../library";
+import Link from "next/link";
 
 function Hero() {
   return (
-    <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{xs:"150%",sm:"100%"}} >
-      <Flex        
+    <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{ xs: "150%", sm: "100%" }}>
+      <Flex
         border="2px solid purple"
         flexDirection={{ xs: "column", sm: "row-reverse" }}
         maxWidth="1440px"
@@ -26,8 +19,8 @@ function Hero() {
           border="2px solid green"
           position="relative"
           justifyContent="center"
-          w={{xs:"100%",sm:"80%"}}
-          h={{ xs: "50vh", sm: "70vh" }}
+          w={{ xs: "100%", sm: "80%" }}
+          h={{ xs: "65vh", sm: "70vh" }}
           zIndex="100"
           overflow="hidden"
           sx={{
@@ -70,7 +63,7 @@ function Hero() {
             top="12rem"
             right="0"
             borderLeftRadius="10rem"
-            height="23rem"
+            height={{ xs: "20rem", sm: "23rem" }}
             zIndex="0"
             bg="primary"
             w="70%"
@@ -103,7 +96,7 @@ function Hero() {
           <Heading
             textAlign={{ xs: "center", sm: "left" }}
             fontWeight="500"
-            fontSize={{ xs: "2rem", sm: "3rem" }}
+            fontSize={{ xs: "3rem", sm: "3rem" }}
             p={{ xs: "0rem", sm: "0.5rem" }}
             color="primaryBlue"
             fontFamily=""
@@ -115,28 +108,37 @@ function Hero() {
             textAlign={{ xs: "center", sm: "left" }}
             p={{ xs: "0.8rem", sm: "0.5rem" }}
             color="grayBlue"
-            fontSize={{ xs: "0.875rem", sm: "1rem" }}
+            fontSize={{ xs: "1.5rem", sm: "1.3rem" }}
           >
             A clean and simple interface to organize your favourite websites.
             Open a new browser tab and see your sites load instantly. Try it for
             free.
           </Text>
           <Flex mt="1.875rem" ml="0.5rem" fontWeight="400">
-            <Button
-              variant="secondary"
-              display="block"
-              boxShadow="lg"
-            >
-              get it on chrome
-            </Button>
-            <Button
-              variant="secondary"
-              display="block"
-              ml="1.3rem"
-              boxShadow="lg"
-            >
-              get it on firefox
-            </Button>
+            <Link href="/bookmark">
+              <Button
+                variant="secondary"
+                display="block"
+                boxShadow="lg"
+                fontSize={{ xs: "1.3rem" }}
+                h={{ xs: "4rem", sm: "3rem" }}
+              >
+                get it on chrome
+              </Button>
+            </Link>
+            <Link href="/bookmark">
+              <Button
+                variant="secondary"
+                display="block"
+                ml="1.3rem"
+                boxShadow="lg"
+                fontSize={{ xs: "1.3rem" }}
+                h={{ xs: "4rem", sm: "3rem" }}
+                // onClick={}
+              >
+                get it on firefox
+              </Button>
+            </Link>
           </Flex>
         </Flex>
       </Flex>

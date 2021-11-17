@@ -38,7 +38,7 @@ function Extension() {
           <Heading
             textAlign={{ xs: "center", sm: "center" }}
             fontWeight="500"
-            fontSize={{ xs: "2rem", sm: "2rem" }}
+            fontSize={{ xs: "3rem", sm: "2rem" }}
             p={{ xs: "0rem", sm: "0.5rem" }}
             color="primaryBlue"
             fontFamily=""
@@ -50,7 +50,7 @@ function Extension() {
             textAlign={{ xs: "center", sm: "center" }}
             p={{ xs: "0.8rem", sm: "0.5rem" }}
             color="grayBlue"
-            fontSize={{ xs: "0.875rem", sm: "1.2rem" }}
+            fontSize={{ xs: "1.5rem", sm: "1.2rem" }}
           >
             We've got more browsers in the pipeline. Please do let us know if
             you've got a favourite you'd like us to prioritize.
