@@ -17,7 +17,7 @@ function Navbar() {
 
   return (
     <Flex
-      border="2px solid grey"
+      // border="2px solid grey"
       w={{ xs: "150%", sm: "100%" }}
       p="3rem"
       justifyContent={{ xs: "space-between" }}

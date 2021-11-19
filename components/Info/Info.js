@@ -19,7 +19,7 @@ function Info() {
   return (
     <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{ xs: "150%", sm: "100%" }}>
       <Flex
-        border="2px solid purple"
+        // border="2px solid purple"
         w={{ xs: "100%", sm: "100%" }}
         flexDirection={{ xs: "column", sm: "column" }}
         maxWidth="1440px"
@@ -30,7 +30,7 @@ function Info() {
         // mb="8rem"
       >
         <Flex
-          border="2px solid red"
+          // border="2px solid red"
           flexDirection="column"
           alignItems={{ xs: "center", sm: "center" }}
           // justifyContent="center"
@@ -62,7 +62,7 @@ function Info() {
           </Text>
           <Flex
             w="100%"
-            border="2px solid orange"
+            // border="2px solid orange"
             h="auto"
             fontSize={{ xs: "1.5rem", sm: "1.2rem" }}
             mb="1rem"

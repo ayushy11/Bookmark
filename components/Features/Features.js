@@ -37,7 +37,7 @@ function Features() {
   return (
     <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{ xs: "150%", sm: "100%" }}>
       <Flex
-        border="2px solid purple"
+        // border="2px solid purple"
         flexDirection={{ xs: "column", sm: "column" }}
         maxWidth="1440px"
         position="relative"
@@ -47,7 +47,7 @@ function Features() {
         // mb="8rem"
       >
         <Flex
-          border="2px solid red"
+          // border="2px solid red"
           flexDirection="column"
           alignItems={{ xs: "center", sm: "center" }}
           // justifyContent="center"
@@ -102,11 +102,13 @@ function Features() {
           </a>
         </Flex>
         <Flex w="45%" h="0.125rem" backgroundColor="grayBlue" />
-        <Flex w="100%" h="auto" border="2px solid orange">
+        <Flex w="100%" h="auto" 
+        // border="2px solid orange"
+        >
           <Section w="100%" bg="#f9f9f9" zIndex="1" px="0rem">
             <Flex
               w="100%"
-              border="2px solid purple"
+              // border="2px solid purple"
               flexDirection={{ xs: "column", sm: "row" }}
               position="relative"
               height="100%"
@@ -114,7 +116,7 @@ function Features() {
               // mb="8rem"
             >
               <Flex
-                border="2px solid green"
+                // border="2px solid green"
                 position="relative"
                 justifyContent="center"
                 w={{ xs: "100%", sm: "80%" }}
@@ -169,7 +171,7 @@ function Features() {
                       w="90%"
                     />
                     <Image
-                      border="2px solid black"
+                      // border="2px solid black"
                       src="/images/illustration-features-tab-1.svg"
                       position="absolute"
                       top="2.3rem"
@@ -196,7 +198,7 @@ function Features() {
                       w="80%"
                     />
                     <Image
-                      border="2px solid black"
+                      // border="2px solid black"
                       src="/images/illustration-features-tab-2.svg"
                       position="absolute"
                       top="0.3rem"
@@ -219,7 +221,7 @@ function Features() {
                       w="80%"
                     />
                     <Image
-                      border="2px solid black"
+                      // border="2px solid black"
                       src="/images/illustration-features-tab-3.svg"
                       position="absolute"
                       top="0.3rem"
@@ -233,7 +235,7 @@ function Features() {
               </Flex>
 
               <Flex
-                border="2px solid red"
+                // border="2px solid red"
                 flexDirection="column"
                 alignItems={{ xs: "center", sm: "flex-start" }}
                 // justifyContent="center"

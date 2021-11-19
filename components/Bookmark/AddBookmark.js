@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Flex, Input, Button } from "@chakra-ui/react";
+import {
+  Flex,
+  Input,
+  Button,
+  InputRightAddon,
+  InputGroup,
+  InputLeftAddon,
+} from "@chakra-ui/react";
 import {
   AlertDialog,
   AlertDialogBody,
@@ -55,12 +62,15 @@ function AddBookmark({ addBookmark }) {
               type="text"
               onChange={handleNameChange}
             />
-            <Input
-              placeholder="URL"
-              value={newData.urls}
-              type="text"
-              onChange={handleUrlChange}
-            />
+            <InputGroup size="sm">
+              <InputLeftAddon children="https://" />
+              <Input
+                placeholder="URL"
+                value={newData.urls}
+                type="text"
+                onChange={handleUrlChange}
+              />              
+            </InputGroup>
           </AlertDialogBody>
           <AlertDialogFooter>
             <Button ref={cancelRef} onClick={onClose}>

@@ -15,7 +15,7 @@ function Extension() {
   return (
     <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{xs:"150%",sm:"100%"}}>
       <Flex
-        border="2px solid purple"
+        // border="2px solid purple"
         w={{ xs: "100%", sm: "100%" }}
         flexDirection={{ xs: "column", sm: "column" }}
         maxWidth="1440px"
@@ -26,7 +26,7 @@ function Extension() {
         // mb="8rem"
       >
         <Flex
-          border="2px solid red"
+          // border="2px solid red"
           flexDirection="column"
           alignItems={{ xs: "center", sm: "center" }}
           // justifyContent="center"
@@ -57,7 +57,7 @@ function Extension() {
           </Text>
         </Flex>
         <Flex
-          border="2px solid green"
+          // border="2px solid green"
           flexDirection={{ xs: "column", sm: "row" }}
           w={{ xs: "100%", sm: "100%" }}
           alignItems="center"

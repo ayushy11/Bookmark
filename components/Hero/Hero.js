@@ -7,7 +7,7 @@ function Hero() {
   return (
     <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{ xs: "150%", sm: "100%" }}>
       <Flex
-        border="2px solid purple"
+        // border="2px solid purple"
         flexDirection={{ xs: "column", sm: "row-reverse" }}
         maxWidth="1440px"
         position="relative"
@@ -16,7 +16,7 @@ function Hero() {
         // mb="8rem"
       >
         <Flex
-          border="2px solid green"
+          // border="2px solid green"
           position="relative"
           justifyContent="center"
           w={{ xs: "100%", sm: "80%" }}
@@ -69,7 +69,7 @@ function Hero() {
             w="70%"
           />
           <Image
-            border="2px solid black"
+            // border="2px solid black"
             src="/images/illustration-hero.svg"
             position="absolute"
             // top="-2.3rem"
@@ -84,7 +84,7 @@ function Hero() {
         </Flex>
 
         <Flex
-          border="2px solid red"
+          // border="2px solid red"
           flexDirection="column"
           alignItems={{ xs: "center", sm: "flex-start" }}
           // justifyContent="center"

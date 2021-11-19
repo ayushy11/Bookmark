@@ -69,37 +69,39 @@ function BookmarkHome() {
       <Flex justifyContent="space-between" flexDir="column" h="100%">
         <Flex
           m={{ sm: "4rem" }}
-          border="2px solid purple"
+          // border="2px solid purple"
           flexDirection={{ xs: "column", sm: "row-reverse" }}
           maxWidth="1440px"
           position="relative"
           height="100%"
           justifyContent={{ xs: "center", sm: "left" }}
         >
-          Bookmarks
+          <Image
+            src="/images/logo-bookmark.svg"
+            pl={{ xs: "0rem", sm: "2rem" }}
+            mt={{ sm: "1rem" }}
+            h="1.875rem"
+          />
         </Flex>
 
         <Bookmarks bookmarks={state.bookmarks} delBookmark={delBookmark} />
 
         <Flex
-          border="2px solid grey"
+          // border="2px solid grey"
           w={{ xs: "150%", sm: "100%" }}
-          p="1rem"
-          justifyContent={{ xs: "space-between" }}
+          p="2rem"
+          justifyContent={{ xs: "flex-end" }}
           position="fixed"
           bottom="0"
+          background="url(/images/wave.svg)"
+          backgroundSize="1600px 198"
+          animation="animate-wave-2 20s linear infinite"
+          z-index="1000"
+          opacity="1"
+          animationDelay="0s"
+          bottom="0"
         >
-          <Flex w={{ sm: "50%" }}>
-            <Image
-              src="/images/logo-bookmark.svg"
-              pl={{ xs: "0rem", sm: "8rem" }}
-              mt={{ sm: "1rem" }}
-              h="1.875rem"
-              zIndex="10000"
-            />
-          </Flex>
           <AddBookmark addBookmark={addBookmark} />
-          {/* <BookmarkDialog /> */}
         </Flex>
       </Flex>
     </Section>

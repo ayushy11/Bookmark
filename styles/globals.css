@@ -44,3 +44,11 @@ a:focus {
 .hidden {
   display: none !important;
 }
+
+@keyframes animate-wave-1{0% {background-position-x: 0;}
+    100% {background-position-x: 1600px;}
+}
+
+@keyframes animate-wave-2{0% {background-position-x: 0;}
+    100% {background-position-x: -1600px;}
+}
