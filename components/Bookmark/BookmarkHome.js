@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Box, Flex, Text, Heading, Button, Image } from "@chakra-ui/react";
 import { Container, Section } from "../library";
-import Link from "next/link";
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import BookmarkDialog from "./BookmarkDialog";
 import Bookmarks from "./Bookmarks";
 import AddBookmark from "./AddBookmark";
 import { v4 as uuidv4 } from "uuid";
@@ -13,18 +10,18 @@ function BookmarkHome() {
     bookmarks: [
       {
         id: uuidv4(),
-        name: "The Earth is not flat",
+        name: "Google",
         url: "https://www.google.com",
       },
       {
         id: uuidv4(),
-        name: "It's not round either",
-        url: "https://www.google.com",
+        name: "Github",
+        url: "https://www.github.com",
       },
       {
         id: uuidv4(),
-        name: "It's more like a donut",
-        url: "https://www.google.com",
+        name: "YouTube",
+        url: "https://www.youtube.com",
       },
     ],
   };
