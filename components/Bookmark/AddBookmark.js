@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import {
   Flex,
   Input,
-  Button,
-  InputRightAddon,
+  Button, 
   InputGroup,
   InputLeftAddon,
-} from "@chakra-ui/react";
-import {
   AlertDialog,
   AlertDialogBody,
   AlertDialogFooter,
@@ -69,7 +66,7 @@ function AddBookmark({ addBookmark }) {
                 value={newData.urls}
                 type="text"
                 onChange={handleUrlChange}
-              />              
+              />
             </InputGroup>
           </AlertDialogBody>
           <AlertDialogFooter>

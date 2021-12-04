@@ -5,22 +5,28 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <Section bg="#f9f9f9" zIndex="1" px="0rem" w={{ xs: "150%", sm: "100%" }}>
+    <Section
+      bg="#f9f9f9"
+      zIndex="1"
+      px="0rem"
+      w={{ xs: "150%", sm: "100%" }}
+      h={{ xs:"100%", sm: "100%" }}
+    >
       <Flex
-        // border="2px solid purple"
+        border="2px solid purple"
         flexDirection={{ xs: "column", sm: "row-reverse" }}
         maxWidth="1440px"
         position="relative"
-        height="100%"
+        height={{xs:"100%",sm:"100%"}}
         justifyContent={{ xs: "center", sm: "space-between" }}
         // mb="8rem"
       >
         <Flex
-          // border="2px solid green"
+          border="2px solid green"
           position="relative"
           justifyContent="center"
           w={{ xs: "100%", sm: "80%" }}
-          h={{ xs: "65vh", sm: "70vh" }}
+          h={{ xs: "100%", sm: "70%", lg: "100%", xl: "100%" }}
           zIndex="100"
           overflow="hidden"
           sx={{
